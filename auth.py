@@ -1,8 +1,13 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python
 
 import os
 import time
 import linode
+
+access_token = os.getenv('LINODE_ACCESS_TOKEN')
+
+if access_token is not None:
+    linode.access_token = access_token
 
 challenge_domain = os.environ['CERTBOT_DOMAIN']
 challenge_string = os.environ['CERTBOT_VALIDATION']

@@ -2,8 +2,8 @@ import re
 import json
 import requests
 
-# Generate a Linode personal access token with full access to domains using the newe Linode manager
-access_token = 'put your token here'
+# Generate a Linode personal access token with full access to domains using the new Linode manager
+access_token = 'put your token here or set the LINODE_ACCESS_TOKEN environment variable'
 
 def get_domain(name):
     '''Gets the domain with the given name.'''
