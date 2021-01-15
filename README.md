@@ -1,5 +1,7 @@
 # Certbot DNS-01 challenge hooks for Linode
 
+**Deprecation notice:** Since creating this project, an officially supported Certbot plugin has been created, making this obsolete. Please use [the official Certbot plugin for Linode](https://certbot-dns-linode.readthedocs.io/) instead.
+
 Until an official Linode DNS plugin is available, here's a set of scripts that facilitate DNS-01 validation when used with Certbot's manual mode.
 
 The DNS-01 challenge works by generating a validation string that must be placed in a specially named TXT record, i.e. `_acme-challenge.example.com`. These scripts use [Linode's v4 API](https://developers.linode.com/api/v4) to add and remove TXT records for domains whose DNS is hosted by Linode.
